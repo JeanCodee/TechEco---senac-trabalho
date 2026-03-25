@@ -1,2 +1,2 @@
-# TechEco---senac-trabalho
-TechEco Trabalho em grupo do senac
+# TechCiclo---senac-trabalho
+TechCiclo Trabalho em grupo do senac
