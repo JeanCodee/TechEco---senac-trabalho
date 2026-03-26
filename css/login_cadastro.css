@@ -1,0 +1,34 @@
+/* Variáveis de cores */
+:root{
+    --primary-color: #E0F1FF;
+    --secondary-color: #A4D6FF;
+    --bg: #4C4444;
+    --text: #FFFFFF;
+    --text-titulo: #0029FF;
+    --text-subtitulo: #7D7D7D;
+}
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body*/
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.container{
+    position: relative;
+    width: 850px;
+    height: 550px;
+    background: var(--primary-color);
+    border-radius: 30px;
+    
+}
+
