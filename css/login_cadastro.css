@@ -1,11 +1,13 @@
 /* Variáveis de cores */
 :root{
-    --primary-color: #E0F1FF;
-    --secondary-color: #A4D6FF;
+    --primary-color: #8fcdff;
+    --secondary-color: #6cb8f7;
     --bg: #4C4444;
     --text: #FFFFFF;
     --text-titulo: #0029FF;
     --text-subtitulo: #7D7D7D;
+    --botao-color: #000000;
+    --botao-hover-color: #333333;
 }
 
 /*reset*/
@@ -23,12 +25,94 @@ body{
     line-height: 1.8;
 }
 
-.container{
-    position: relative;
-    width: 850px;
-    height: 550px;
-    background: var(--primary-color);
-    border-radius: 30px;
-    
+/* main*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 70%;
+    margin: 0 auto;
 }
+
+.overlay_container{
+    width: 450px;
+    height: 450px;
+    background: var(--secondary-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.botao-para-login{
+    padding: 10px;
+    background-color: var(--botao-color);
+    color: var(--text);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.botao-para-login:hover{
+    background-color: var(--botao-hover-color);
+    transform: scale(1.05);
+}
+
+.container-cadastro{
+    position: relative;
+    width: 600px;
+    height: 450px;
+    background: var(--primary-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex: 1;
+}
+
+.container-cadastro h3{
+    font-size: 32px;
+    color: var(--text-titulo)
+}
+
+.container-cadastro .sub-titulo{
+
+    color: var(--text-subtitulo);
+    justify-content: center;
+}
+
+.container-cadastro label{
+    color: var(--text);
+    font-size: 20px;
+}
+
+.container-cadastro input{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.botao_cadastro{
+    padding: 10px;
+    background-color: var(--botao-color);
+    color: var(--text);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.botao_cadastro:hover{
+    background-color: var(--botao-hover-color);
+    transform: scale(1.05);
+}
+
 

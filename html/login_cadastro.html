@@ -9,11 +9,13 @@
 </head>
 <main>
 <body>
-<div class="container">
+<div class="overlay_container">
     <h2 class="titulo">Bem-vindo(a) de volta!</h2>
-    <p class="sub-titulo">acesse conta para continuar</p>
+    <p class="sub-titulo-acesso">acesse conta para continuar</p>
+    <button type="submit" class="botao-para-login">Entrar</button>
+</div>
 
-    <button type="submit" class="botao_tela_de_entrar">Entrar</button>
+<div class="container-cadastro">
 
     <!-- Seção de cadastro -->
 
@@ -21,19 +23,19 @@
     <p class="sub-titulo">Cadastre seus dados:</p>
 
     <form action="/cadastro" method="POST" >
-        <label for="nome" class="form-label"> Nome completo:</label>
-        <input type="text" id="nome" name="userName" required placeholder="digite seu nome"><i class="fa-regular fa-user"></i><br>
+        <label for="nome" class="form-label"> Nome completo:</label><br>
+        <i class="fa-regular fa-user"></i><input type="text" id="nome" name="userName" required placeholder="digite seu nome"><br>
 
-        <label for="email" class="form-label"> Email:</label>
-        <input type="email" id="email" name="userEmail" required placeholder="digite seu e-mail"><i class="fa-regular fa-envelope"></i><br>
+        <label for="email" class="form-label"> Email:</label><br>
+        <i class="fa-regular fa-envelope"></i><input type="email" id="email" name="userEmail" required placeholder="digite seu e-mail"><br>
 
-        <label for="senha" class="form-label"> senha:</label>
-        <input type="password" id="senha" name="userPassword" required placeholder="digite sua senha"><i class="fa-solid fa-lock"></i></i><br>
+        <label for="senha" class="form-label"> senha:</label><br>
+        <i class="fa-solid fa-lock"></i><input type="password" id="senha" name="userPassword" required placeholder="digite sua senha"><br>
         <button type="submit" class="botao_cadastro">Cadastrar</button>
     </form>
 </div>
-    <!-- Seção de login -->
-<div class="forma-box registro">
+    <!-- Seção de login 
+<div class="forma-box-login">
     <h4 class="titulo">Acesse sua conta:</h4>
     
     <form action="/login" method="POST">
@@ -44,46 +46,7 @@
         <input type="password" id="senha-login" name="userPassword" required placeholder="digite sua senha"><i class="fa-solid fa-lock"></i><br>
         <button type="submit" class="botao_entrar">Login</button>
     </form>
-</div>
-
-    
-    <!-- Seção de contato -->
-    <section id="contato" class="contato">
-    <div class="container-contato">
-        <div class="contato-info">
-            <h5 class="titulo">Fale conosco</h5>
-            <p class="sub-titulo">Algum problema ou sugestão? Chame! Faça contato abaixo</p>
-            
-            <div class="redes-sociais">
-                <span>Siga-nos:</span>
-                <div class="icones">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="X"><i class="fab fa-x"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <form class="formulario-contato">
-            <div class="campo">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Seu nome" required>
-            </div>
-
-            <div class="campo">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="seu@email.com" required>
-            </div>
-
-            <div class="campo">
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" rows="4" placeholder="Como podemos ajudar ?" required></textarea>
-            </div>
-
-            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
-        </form>
-    </div>
-</section>
+</div> -->
 </main>
 </body>
 </html>
