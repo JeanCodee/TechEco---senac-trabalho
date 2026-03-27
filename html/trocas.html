@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>pagina de troca</title>
+    <link rel="stylesheet" href="/css/trocas.css">
+</head>
+    <header>
+        <h1>TechCiclo</h1>
+
+        <input type="text" placeholder="pesquise aqui">
+   <button type="submit">Pesquisar</button>
+
+   <button>Aba de serviços</button>
+   <i class="fa-solid fa-circle-user"></i>
+        
+   <icon class="usuario">Nome de usuário</icon><br>
+   <button>Loguin ou entrar</button>
+   
+    </header>
+<body>
+    <h2>Troca de produtos</h2>
+    <p>Solicite a troca do seu produto aqui</p>
+
+    <form action="/troca" method="POST">
+        <label for="produto"> Produto:</label>
+        <input type="text" id="produto" name="produto" required placeholder="digite o nome do produto"><br>
+
+        <button type="submit">Solicitar Troca</button>
+    </form>    
+
+    <!--filtragem-->
+    <section class="icones-de-troca">
+        <i class="fa-solid fa-gamepad"></i>gamer<br> 
+        <i class="fa-solid fa-desktop"></i>Pc<br>
+        <i class="fa-solid fa-tablet"></i>tablet<br>        
+        <i class="fa-solid fa-mobile"></i>celular<br> 
+        <i class="fa-solid fa-headphones"></i>headphones<br>
+
+        <icon class="fones"></icon>     
+        
+        
+    </section>
+    <!--resultado da filtragem-->
+    <section class="Iténs-de-troca">
+        <h3>Itens disponíveis para troca:</h3>
+        <ul>
+            <li>Notebook Gamer XYZ</li>
+            <li>Smartphone ABC </li>
+            <li>PC de Mesa DEF </li>
+            <li>Notebook Pessoal GHI </li>
+        </ul>
+    </section>
+
+    
+
+    
+    <footer>
+        <section class="info_extra" id="info">
+          
+                    <section class="sobre-site">
+                <h1>Quer saber mais sobre?</h1>
+
+                    <h2>Oque é o Site?</h2>
+                <p>
+                    Uma plataforma web baseada em HTML que permita integrar:
+                    apresentação dos serviços da empresa (trade marketing e suporte).
+                    gerenciamento de clientes.
+                    um sistema de pontuação e recompensas.
+                    solicitação de manutenção e troca de produtos tecnológicos 
+                    promover um maior contato entre usuários do Site.
+                   </p>
+                    </section>
+                
+                    <section class="objetivo-site">
+                <h2>Objetivo</h2>
+                <p> O objetivo principal é melhorar a fidelização do cliente, facilitar o controle de
+                     serviços e oferecer benefícios através de um sistema de pontos.</p>
+                    </section>
+
+                    <section class="publico-site">
+                     <h2>Publico alvo</h2>
+                     <p>*Empresas
+                         que trabalham com equipamentos eletrônicos.
+                         *Usuários finais que possuem produtos eletrônicos e buscam suporte ou troca.</p>
+                    </section>
+    </footer>
+</body>
+</html>
