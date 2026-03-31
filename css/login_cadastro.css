@@ -59,7 +59,7 @@ main{
 
 .botao-para-login:hover{
     background-color: var(--botao-hover-color);
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .container-cadastro{
@@ -112,7 +112,7 @@ main{
 
 .botao_cadastro:hover{
     background-color: var(--botao-hover-color);
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 
