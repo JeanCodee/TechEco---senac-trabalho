@@ -1,93 +1,146 @@
-:root{
-    --cor-primaria: #333;
-    --cor-secundaria: #fff;
-    --cor-fundo: rgb(58, 187, 210);
+:root {
+    --cor-primaria: #203CC7;
+    --cor-secundaria: #faf6f6;
+    --cor-fundo: #d5d7d6;
+    --cor-destaque: rgb(204, 206, 239);
+    --cor-card: rgb(64, 101, 223);
 }
 
-
-
-
-*{
+* {
     margin: 0;
-    padding:0%;
+    padding: 0;
     box-sizing: border-box;
 }
 
-header{
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: var(--cor-primaria);
     color: white;
-    padding: 50px 1px;
-    background-image: url(/img/banner.jpg); /*propriedades que vao modificar a imagem*/
-    background-repeat: no-repeat;/*propriedades que vao modificar a imagem*/
-    background-size: cover;/*propriedades que vao modificar a imagem*/
-    font-family: normal normal normal 14px/1.4 "Open Sans", sans-serif;
+    padding: 20px 5%;
+    min-height: 150px;
 }
 
-body{
-    margin: 0;
-    font-family: normal;
+.usuario {
+    text-align: right;
+}
+
+.usuario i {
+    font-size: 2rem;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.btn-login {
+    background: var(--cor-destaque);
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
     background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.boas-vindas {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+/* FORMULÁRIO LADO A LADO */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.troca-form button {
+    padding: 0 20px;
+    background-color: #203CC7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* CARDS DE ÍCONES LADO A LADO */
+.cards-icones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    gap: 15px;
+}
+
+.cards-icones p{
+    text-align: center;
+    
+}
+
+.card {
+    background-color: var(--cor-card);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin:0%;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(43, 74, 198, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.logo{
-    font-weight: bold;
-    font-size: 30%;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-h2{
-    background-color: rgb(83, 149, 167);
-    color: #fff;
+/* LISTA DE ITENS */
+.itens-disponiveis {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-.card-conteiner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+.lista-trocas {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
 }
-.card{
-    background-color: rgb(144, 214, 214);
-    border-radius: 68%;
+
+.lista-trocas li {
+    background: white;
     padding: 10px;
-    justify-content: center;
-    display: flex;
-    box-shadow:  0 5px 8px  rgb(143, 139, 139);
-    overflow: hidden;
-    width: 10%;
-    right: 90%;
-    transition: transform 0.4 ease;
-    
-    
-}
-.trocas{
-    border-radius: 4%;
-    padding: 10%;
-    display:12% ;
-    background-color: rgb(61, 113, 113);
-    border-top: 18%;
-    justify-content: center;
-    width: 23% ;
-    right: 11%;
-    color: #fbfbfb;
-
-}
-
-.h2{
-    font-size:14px;
-    font-weight:100;
-    line-height: 20px;
-    letter-spacing: 3px;
-    margin: 10%;
-}
-
-.p{
-    font-size: 14px;
-    font-weight: 10px
+    border-radius: 4px;
+    border-left: 5px solid var(--cor-destaque);
 }
