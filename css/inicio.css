@@ -1,0 +1,77 @@
+/* Container que força a disposição horizontal dos 3 blocos */
+.home-container {
+    display: flex;
+    flex-direction: row; /* Coloca os pilares e o centro lado a lado */
+    align-items: stretch; /* Faz as laterais terem a mesma altura do centro */
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 2%;
+    min-height: 500px;
+}
+
+/* Pilares Laterais Verticais */
+.side-pilar {
+    flex: 0 0 150px; /* Largura fixa para manter o formato de pilar */
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pilar-content h3 {
+    writing-mode: horizontal-tb; /* Texto normal */
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Área Central */
+.main-content {
+    flex: 1; /* Ocupa o espaço que sobrar no meio */
+    display: flex;
+    gap: 15px;
+}
+
+.action-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    color: white;
+}
+
+.trocas { background-color: #b388eb; }
+.servicos { background-color: #64b5f6; }
+
+.action-box:hover {
+    transform: scale(1.02);
+}
+
+/* Botões de Ação */
+.btn-home {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: #082fe1;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-home:hover {
+    background-color: #00d4ff;
+    color: white;
+}
+
+/* Responsividade: vira uma coluna no celular */
+@media (max-width: 1024px) {
+    .home-container { flex-direction: column; }
+    .main-content { flex-direction: column; }
+    .sidebar { order: 3; } /* Joga as laterais para o fim no mobile */
+}
