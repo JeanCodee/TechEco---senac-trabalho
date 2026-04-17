@@ -23,6 +23,11 @@ body {
     height: 100vh;
 }
 
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+    
 .container {
     background-color: #fff;
     border-radius: 15px;
