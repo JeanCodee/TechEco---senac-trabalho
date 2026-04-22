@@ -8,14 +8,31 @@
     <title>TechCiclo - Trocas</title>
 </head>
 <body>
-    <header>
-        <h1>TechCiclo</h1>
-        <div class="usuario">    
-            <span class="nome-usuario">Nome de usuário</span>
-            <i class="fa-solid fa-circle-user"></i>
-            <button class="btn-login">Login ou entrar</button>
-        </div>    
-    </header>
+     <header class="main-header">
+    <div class="header-top">
+        <div class="cep-container">
+            <span>Você mora em: <strong>CEP</strong></span>
+        </div>
+        <div class="user-area">
+            <div class="user-info">
+                <span class="username">Nome do usuário</span>
+                <a href="#" class="login-link">login ou entrar</a>
+            </div>
+            <a href="tela_perfil.html" class="profile-icon">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <a href="#" class="logo-link">
+            <h1 class="logo-text">TechCiclo</h1>
+        </a>
+    </div>
+
+    
+</header>
+
 
     <main class="container">
         <section class="boas-vindas">
@@ -34,6 +51,7 @@
         </section>
 
         <div class="cards-icones">
+            
             <div class="card"><i class="fa-solid fa-gamepad" style="color: rgb(248, 249, 249);"></i></div>
             <p>Games</p>
             <div class="card"><i class="fa-solid fa-computer" style="color: rgb(248, 249, 249);"></i></div>
@@ -62,35 +80,44 @@
             <p>Preço: xx</p>
         </article>
 
-        <div>
-            <button>Informações do produto</button>
-        </div>
+        
 
         <article class="item">
             <img src="/img/baixados.jpg" class="imagem">
             <p>Preço: xx</p>
         </article>
-        <div>
-            <button>Informações do produto</button>
-        </div>
+
+        
 
 
         <article class="item">
             <img src="/img/Blackbook.jpg" class="imagem">
             <p>Preço: xx</p>
         </article>
-        <div>
-            <button>Informações do produto</button>
-        </div>
+
+       
 
         <article class="item">
             <img src="/img/Dell Optiplex 9020 Desktop Computer.jpg" class="imagem">
             <p>Preço: xx</p>
         
         </article>
-        <div>
-            <button>Informações do produto</button>
-        </div>
+        
+    </section>
+    
+    <section class="informacional">
+
+        <button class="butao">Informação do produto</button>
+
+
+        <button class="butao">Informação do produto</button>
+  
+   
+        <button class="butao">Informação do produto</button>
+    
+    
+        <button class="butao">Informação do produto</button>
+
     </section>
 
     
@@ -106,8 +133,48 @@
     </section> -->
 
 <footer>
-     <p>@2026 TechCiclo</p>
-</footer> 
+    <div class="footer-container">
+        <!-- Links rápidos (você pode adicionar mais depois) -->
+        <div class="footer-col links">
+            <h3>Navegação Rápida</h3>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Trocas</a></li>
+                <li><a href="#">Serviços de Manutenção</a></li>
+                <li><a href="#">Programa de Pontos</a></li>
+                <li><a href="#">Comunidade</a></li>
+                <li><a href="#">Para Empresas</a></li>
+            </ul>
+        </div>
+
+        <!-- Contato / Suporte -->
+        <div class="footer-col suporte">
+            <h3>Suporte</h3>
+            <ul>
+                <li><a href="#">Central de Ajuda</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="footer-col social">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barra inferior -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 TechEco - Todos os direitos reservados.</p>
+    </div>
+</footer>
 
 <script src="/js/trocas.js"></script>
     
