@@ -1,52 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login - TechCiclo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/TechEco---senac-trabalho/css/login_cadastro.css">
+    <title>Login & Cadastro - TechCiclo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/login_cadastro.css">
 </head>
-<main>
 <body>
-<div class="overlay_container">
-    <h2 class="titulo">Bem-vindo(a) de volta!</h2>
-    <p class="sub-titulo-acesso">acesse conta para continuar</p>
-    <button type="submit" class="botao-para-login">Entrar</button>
-</div>
+    <!--Container padrão-->
+    <main class="container" id="container">
+        <!--Formulário de Cadastro-->
+        <div class="form-container sign-up-container">
+            <form action="/cadastro" id="formCadastro" method="POST">
+                <h1 class="titulo">Crie sua conta</h1>
+                <p class="sub-titulo">Use seu e-mail para registrar</p>
+                <div class="input-group">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" id="cadName" name="cadName" placeholder="Nome completo" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="cadEmail" name="cadEmail" placeholder="E-mail" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="cadPassword" name="cadPassword" placeholder="Senha" required>
+                    <i class="fa-solid fa-eye toggle-password" data-target="cadPassword" style="cursor: pointer;"></i>
+                </div>
+                <button type="submit" class="btn-main">Cadastrar</button>
+            </form>
+        </div>
 
-<div class="container-cadastro">
+        <!--Formulário de login-->
+        <div class="form-container sign-in-container">
+            <form action="/login" id="formLogin" method="POST">
+                <h1 class="titulo">Acesse sua conta</h1>
+                <p class="sub-titulo">Bem-vindo de volta!</p>
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="loginEmail" name="loginEmail" placeholder="E-mail" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Senha" required>
+                    <i class="fa-solid fa-eye toggle-password" data-target = "loginPassword" style="cursor: pointer;" ></i>
+                </div>
+                <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+                <button type="submit" class="btn-main">Entrar</button>
+            </form>
+        </div>
 
-    <!-- Seção de cadastro -->
+        <!--Container overlay-->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h2>Já tem conta?</h2>
+                    <p>Faça login para continuar gerenciando suas trocas!</p>
+                    <button class="btn-main" id="signIn">Entrar</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h2>Ainda não possue uma conta?</h2>
+                    <p>Cadastre-se e comece a trocar seus dispositivos eletrônicos!</p>
+                    <button class="btn-main" id="signUp">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <h3 class="titulo">crie sua conta</h3>
-    <p class="sub-titulo">Cadastre seus dados:</p>
-
-    <form action="/cadastro" method="POST" >
-        <label for="nome" class="form-label"> Nome completo:</label><br>
-        <i class="fa-regular fa-user"></i><input type="text" id="nome" name="userName" required placeholder="digite seu nome"><br>
-
-        <label for="email" class="form-label"> Email:</label><br>
-        <i class="fa-regular fa-envelope"></i><input type="email" id="email" name="userEmail" required placeholder="digite seu e-mail"><br>
-
-        <label for="senha" class="form-label"> senha:</label><br>
-        <i class="fa-solid fa-lock"></i><input type="password" id="senha" name="userPassword" required placeholder="digite sua senha"><br>
-        <button type="submit" class="botao_cadastro">Cadastrar</button>
-    </form>
-</div>
-    <!-- Seção de login 
-<div class="forma-box-login">
-    <h4 class="titulo">Acesse sua conta:</h4>
-    
-    <form action="/login" method="POST">
-        <label for="email-login" class="form-label"> Email:</label>
-        <input type="email" id="email-login" name="userEmail" required placeholder="digite seu e-mail"><i class="fa-regular fa-envelope"></i><br>
-
-        <label for="senha-login" class="form-label"> senha:</label>
-        <input type="password" id="senha-login" name="userPassword" required placeholder="digite sua senha"><i class="fa-solid fa-lock"></i><br>
-        <button type="submit" class="botao_entrar">Login</button>
-    </form>
-</div> -->
-</main>
+    <script src="/js/login_cadastro.js"></script>
 </body>
 </html>
