@@ -66,15 +66,14 @@ body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s;
     color: var(--primary-color);
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 20px;
 }
 
 .back-link:hover {
     background: var(--primary-color);
     color: white;
-    transform: translateX(-3px);
 }
 
 .sidebar-usuario{
