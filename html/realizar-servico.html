@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realização de serviço</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/header_footer.css">
-    <link rel="stylesheet" href="/css/realizar-servico.css">
+    <link rel="stylesheet" href="/css/realizar_servico.css">
   
   
 </head>
@@ -41,14 +40,28 @@
     <i class="fas fa-arrow-left"></i>
 </button>
     <main class="realizar-servico">
-        <img src="foto-servico.jpg" alt="Foto do Serviço" class="servico-imagem">
-        <div class="descricao-servico">
-            <h2>Coloque o nome do servico aqui</h2>
-            <p>Coloque a descrição do serviço aqui. Detalhe o que será feito, quais são os benefícios para o cliente e qualquer informação relevante.</p>
-            <h3>preço: R$ 0,00</h3>
-        </div>
-    </main>
+        <section class="detalhe-servico">
+            <img src="foto-servico.jpg" alt="Foto do Serviço" class="servico-imagem">
+            <div class="descricao-servico">
+                <h2>Coloque o nome do serviço aqui</h2>
+                <p>Coloque a descrição do serviço aqui. Detalhe o que será feito, quais são os benefícios para o cliente e qualquer informação relevante.</p>
+                <h3>preço: R$ 0,00</h3>
+                <button id="botao-solicitar-servico" class="botao-servico">solicitar Serviço</button>
+            </div>
+        </section>
 
+        <aside class="sidebar-usuario">
+                <div class="usuario-info">
+                    <img src="/img/foto_usuario.jpg" alt="foto-usuario" class="foto-usuario">
+                    <h3>João Silva</h3>
+                    <div class="avaliacoes">
+                        <span>⭐ 4.8</span>
+                        <span>🔁 15 serviços realizados</span>
+                    </div>
+                    <button class="botao-perfil">ver perfil Completo</button>
+                </div>
+        </aside>
+    </main>
 <footer>
     <div class="footer-container">
         <!-- Links rápidos (você pode adicionar mais depois) -->
@@ -92,6 +105,6 @@
         <p>&copy; 2026 TechEco - Todos os direitos reservados.</p>
     </div>
 </footer>
-
+<script src="/js/realizar-servico.js"></script>
 </body>
 </html>
