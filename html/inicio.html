@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="/TechEco---senac-trabalho/css/header_footer.css">
-    <link rel="stylesheet" href="/TechEco---senac-trabalho/css/inicio.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
-    <title>Senac_project</title>
-</head>
-<body>
-    
-</body>
-</html>
-<!-- header -->
-         <header class="main-header">
+    <title>TechCiclo - Economia Circular</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../CSS/header_footer.css">
+    <link rel="stylesheet" href="/TechEco---senac-trabalho/css/inicio.css">
+
+    <header class="main-header">
     <div class="header-top">
         <div class="cep-container">
             <span>Você mora em: <strong>CEP</strong></span>
         </div>
         <div class="user-area">
-            <div class="user-info">
+            <div class="user-info">               
                 <span class="username">Nome do usuário</span>
-                <a href="#" class="login-link">login ou entrar</a>
+                <a href="/TechEco---senac-trabalho/html/login_cadastro.html" class="login-link">login ou entrar</a>
             </div>
-            <a href="tela_perfil.html" class="profile-icon">
+            <a href="/TechEco---senac-trabalho/html/tela_perfil.html" class="profile-icon">
                 <i class="fa-regular fa-circle-user"></i>
             </a>
         </div>
     </div>
+
+    
 
     <div class="header-main">
         <a href="#" class="logo-link">
@@ -36,53 +33,233 @@
         </a>
     </div>
 
-    
-    </header>
+    <!-- <div class="user-area">
+    <button id="dark-mode-toggle" style="background: transparent; border: none; color: white; cursor: pointer; font-size: 1.2rem; margin-right: 15px;">
+        <i class="fa-solid fa-moon"></i>
+    </button> -->
+</header>
 
-        <nav class="main-nav-bar">
-                    <div class="nav-container">
-                        <ul class="nav-links">
-                            <li><a href="#">Troca</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Contato</a></li>
-                            <li><a href="#">Favoritos</a></li>
-                            <li><a href="#">Carrinho</a></li>
-                            <li><a href="#">Chat</a></li>
-                        </ul>
-                        </div>
-                    </nav>
 
+<nav class="main-nav-bar">
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="/TechEco---senac-trabalho/html/objeto_troca.html">Troca</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="#">Carrinho</a></li>
+                    <li><a href="#">Chat</a></li>
+                </ul>
+                </div>
+            </nav>
     <main class="home-container">
-         <aside class="sidebar side-pilar">
-             <div class="pilar-content">
-                   <h3>Placar Top</h3>
-                <p>Pontuação de<br>Economia Circular</p>
-             </div>
-         </aside>
+    <!-- <aside class="sidebar side-pilar">
+        <div class="pilar-content">
+            <h3>Placar Top</h3>
+            <p>Pontuação de<br>Economia Circular</p>
+        </div>
+    </aside> -->
 
-            <section class="main-content">
-                <div class="action-box trocas">
-                    <h2>Troca de Componentes</h2>
-                    <p>Texto descritivo aqui</p>
-                    <button class="btn-home">Ir para Trocas</button>
-                </div>
-                <div class="action-box servicos">
-                    <h2>Serviços de Reparo</h2>
-                    <p>Texto descritivo aqui</p>
-                    <button class="btn-home">Pedir Serviço</button>
-                </div>
-            </section>
+    <section class="main-content">
+    
+    <button class="seta esquerda">&#10094;</button>
 
-            <aside class="sidebar side-pilar">
-                <div class="pilar-content">
-                    <h3>Propaganda</h3>
-                    <p>Espaço para<br>Parceiros</p>
-                </div>
-            </aside>
-        </main>
+    <div class="carrossel">
+        <div class="carrossel-track">
+            <div class="action-box trocas">
+                <h2>Troca de Componentes</h2>
+                <p>Texto descritivo aqui</p>
+                <button class="btn-home">Ir para Trocas</button>
+            </div>
+
+            <div class="action-box servicos">
+                <h2>Serviços de Reparo</h2>
+                <p>Texto descritivo aqui</p>
+                <button class="btn-home">Pedir Serviço</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="seta direita">&#10095;</button>
+
+</section>
+    <!-- <aside class="sidebar side-pilar">
+        <div class="pilar-content">
+            <h3>Propaganda</h3>
+            <p>Espaço para<br>Parceiros</p>
+        </div>
+    </aside> -->
+</main>
+
+        <section class="produtos-destaque">
+    <h2 class="titulo-secao"><u>Produtos em Destaque</u></h2>
+
+    <div class="grid-produtos">
+
+            <div class="card-produto">
+
+            <div class="badge">Novo</div>
+
+            <img src="/TechEco---senac-trabalho/img/teclado gamer logitech.jpg" alt="Produto 1">
+
+            <h3>Teclado Gamer Logitech</h3>
+
+            <div class="avaliacao">
+                ★★★★☆ <span>(120)</span>
+            </div>
+
+            <p class="preco">
+                <span class="preco-antigo">R$ 600</span>
+                R$ 559
+            </p>
+
+            <button class="btn-carrinho">
+                <i class="fa-solid fa-cart-shopping"></i> Adicionar
+            </button>
+
+        </div>
+                
+
+                <div class="card-produto">
+
+            <div class="badge">Novo</div>
+
+            <img src="/TechEco---senac-trabalho/img/mouse logitech.jpg" alt="Produto 1">
+
+            <h3>Mouse Logitech</h3>
+
+            <div class="avaliacao">
+                ★★★★☆ <span>(120)</span>
+            </div>
+
+            <p class="preco">
+                <span class="preco-antigo">R$ 400</span>
+                R$ 359
+            </p>
+
+            <button class="btn-carrinho">
+                <i class="fa-solid fa-cart-shopping"></i> Adicionar
+            </button>
+
+        </div>
+
+                <div class="card-produto">
+
+            <div class="badge">Novo</div>
+
+            <img src="/TechEco---senac-trabalho/img/mouse razer.webp" alt="Produto 1">
+
+            <h3>Mouse Razer</h3>
+
+            <div class="avaliacao">
+                ★★★★☆ <span>(120)</span>
+            </div>
+
+            <p class="preco">
+                <span class="preco-antigo">R$ 300</span>
+                R$ 289
+            </p>
+
+            <button class="btn-carrinho">
+                <i class="fa-solid fa-cart-shopping"></i> Adicionar
+            </button>
+
+        </div>
+
+                <div class="card-produto">
+
+            <div class="badge">Novo</div>
+
+            <img src="/TechEco---senac-trabalho/img/kit completo gamer.jpg" alt="Produto 1">
+
+            <h3>Razer kit completo</h3>
+
+            <div class="avaliacao">
+                ★★★★☆ <span>(120)</span>
+            </div>
+
+            <p class="preco">
+                <span class="preco-antigo">R$ 11.200</span>
+                R$ 11.899
+            </p>
+
+            <button class="btn-carrinho">
+                <i class="fa-solid fa-cart-shopping"></i> Adicionar
+            </button>
+
+        </div>
+                <div class="card-produto">
+
+            <div class="badge">Novo</div>
+
+            <img src="/TechEco---senac-trabalho/img/kit mouse teclado reddragon.jpg" alt="Produto 1">
+
+            <h3>Kit Mouse e Teclado Red Dragon</h3>
+
+            <div class="avaliacao">
+                ★★★★☆ <span>(120)</span>
+            </div>
+
+            <p class="preco">
+                <span class="preco-antigo">R$ 500</span>
+                R$ 600
+            </p>
+
+            <button class="btn-carrinho">
+                <i class="fa-solid fa-cart-shopping"></i> Adicionar
+            </button>
+
+        </div>
+
+                <div class="card-produto">
+
+            <div class="badge">Novo</div>
+
+            <img src="/TechEco---senac-trabalho/img/headset reddragon.jpg" alt="Produto 1">
+
+            <h3>Headset Red Dragon</h3>
+
+            <div class="avaliacao">
+                ★★★★☆ <span>(120)</span>
+            </div>
+
+            <p class="preco">
+                <span class="preco-antigo">R$ 200</span>
+                R$ 149
+            </p>
+
+            <button class="btn-carrinho">
+                <i class="fa-solid fa-cart-shopping"></i> Adicionar
+            </button>
+
+</div>
+
+    </div>
+</section>
 
     <footer>
     <div class="footer-container">
+        
+        <!-- Logo + Sobre o Site
+        <div class="footer-col sobre">
+            <h1 class="logo">TechEco</h1>
+            
+            <h2>Quer saber mais sobre o Site?</h2>
+            
+            <h3>O que é o Site?</h3>
+            <p>Uma plataforma web baseada em HTML que permita integrar: apresentação dos serviços da empresa (trade marketing e suporte), gerenciamento de clientes, um sistema de pontuação e recompensas, solicitação de manutenção e troca de produtos tecnológicos e promover um maior contato entre usuários do Site.</p>
+            
+            <h3>Objetivo</h3>
+            <p>O objetivo principal é melhorar a fidelização do cliente, facilitar o controle de serviços e oferecer benefícios através de um sistema de pontos.</p>
+            
+            <h3>Público Alvo</h3>
+            <p>
+                • Empresas que trabalham com equipamentos eletrônicos, empresas de tecnologia e empresas de manutenção.<br>
+                • Clientes finais que compram produtos e precisam de manutenção ou desejam trocar/doar aparelhos.<br>
+                • Parceiros comerciais que utilizam trade marketing.
+            </p>
+        </div> -->
+
         <!-- Links rápidos (você pode adicionar mais depois) -->
         <div class="footer-col links">
             <h3>Navegação Rápida</h3>
@@ -123,9 +300,10 @@
     <div class="footer-bottom">
         <p>&copy; 2026 TechEco - Todos os direitos reservados.</p>
     </div>
-        </footer>
+</footer>
 
 </body>
-</html>
 
-        
+<script src="/TechEco---senac-trabalho/js/inicio.js"></script>
+
+</html>
