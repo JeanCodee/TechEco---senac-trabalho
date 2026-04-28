@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realização de serviço</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link rel="stylesheet" href="/css/header_footer.css">
+    <link rel="stylesheet" href="/css/realizar_servico.css">
+  
+  
+</head>
+<body>
+
+    <header class="main-header">
+    <div class="header-top">
+        <div class="cep-container">
+            <span>Você mora em: <strong>CEP</strong></span>
+        </div>
+        <div class="user-area">
+            <div class="user-info">
+                <span class="username">Nome do usuário</span>
+                <a href="login_cadastro.html" class="login-link">login ou entrar</a>
+            </div>
+            <a href="tela_perfil.html" class="profile-icon">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <a href="#" class="logo-link">
+            <h1 class="logo-text">TechCiclo</h1>
+        </a>
+    </div>
+
+    
+</header>
+<button class="back-link" onclick="window.history.back();">
+    <i class="fas fa-arrow-left"></i>
+</button>
+    <main class="realizar-servico">
+        <section class="detalhe-servico">
+            <img src="foto-servico.jpg" alt="Foto do Serviço" class="servico-imagem">
+            <div class="descricao-servico">
+                <h2>Coloque o nome do serviço aqui</h2>
+                <p>Coloque a descrição do serviço aqui. Detalhe o que será feito, quais são os benefícios para o cliente e qualquer informação relevante.</p>
+                <h3>preço: R$ 0,00</h3>
+                <button id="botao-solicitar-servico" class="botao-servico">solicitar Serviço</button>
+            </div>
+        </section>
+
+        <aside class="sidebar-usuario">
+                <div class="usuario-info">
+                    <img src="/img/foto_usuario.jpg" alt="foto-usuario" class="foto-usuario">
+                    <h3>João Silva</h3>
+                    <div class="avaliacoes">
+                        <span>⭐ 4.8</span>
+                        <span>🔁 15 serviços realizados</span>
+                    </div>
+                    <button class="botao-perfil">ver perfil Completo</button>
+                </div>
+        </aside>
+    </main>
+<footer>
+    <div class="footer-container">
+        <!-- Links rápidos (você pode adicionar mais depois) -->
+        <div class="footer-col links">
+            <h3>Navegação Rápida</h3>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Trocas</a></li>
+                <li><a href="#">Serviços de Manutenção</a></li>
+                <li><a href="#">Programa de Pontos</a></li>
+                <li><a href="#">Comunidade</a></li>
+                <li><a href="#">Para Empresas</a></li>
+            </ul>
+        </div>
+
+        <!-- Contato / Suporte -->
+        <div class="footer-col suporte">
+            <h3>Suporte</h3>
+            <ul>
+                <li><a href="#">Central de Ajuda</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="footer-col social">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barra inferior -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 TechCiclo - Todos os direitos reservados.</p>
+    </div>
+</footer>
+<script src="/js/realizar-servico.js"></script>
+</body>
+</html>
