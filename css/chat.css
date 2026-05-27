@@ -120,6 +120,18 @@ body {
     transition: background-color 0.3s;
 }
 
+.voltar-chat {
+    display: none; 
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px 5px 0;
+    align-items: center;
+    justify-content: center;
+}
+
 .chat-recentes {
     width: 300px;
     height: 600px;
@@ -157,6 +169,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+    z-index: 1;
 }
 
 .chat-produto-img {
@@ -256,4 +269,105 @@ input {
 
 .botao-enviar:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .chat-recentes {
+        width: 260px; 
+        padding: 15px;
+    }
+
+    .chat-titulo {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .mensagem {
+        max-width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-page {
+        position: relative;
+        overflow: hidden;
+        height: calc(100vh - 140px);
+        min-height: 550px;
+    }
+
+    .chat-recentes {
+        width: 100%;
+        height: 100%;
+        border-right: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        transition: transform 0.3s ease;
+    }
+
+    .chat-container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+    .voltar-chat {
+        display: flex; 
+    }
+    
+    .chat-page.exibir-conversa .chat-container {
+        transform: translateX(0);
+    }
+
+    .chat-page.exibir-conversa .chat-recentes {
+        transform: translateX(-100%);
+    }
+
+    .voltar-pagina {
+        display: flex !important;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .chat-header {
+        padding: 15px;
+    }
+
+    .chat-produto-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .chat-main {
+        padding: 15px;
+    }
+
+    .mensagem {
+        max-width: 95%;
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .chat-input {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    input {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .botao-enviar {
+        width: 45px;
+        height: 45px;
+    }
 }

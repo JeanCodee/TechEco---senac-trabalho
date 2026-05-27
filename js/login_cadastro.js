@@ -59,3 +59,25 @@ document.getElementById('formLogin').addEventListener('submit', (event) => {
         alert('Nenhum usuário cadastrado encontrado!');
     }
 });
+
+// Js para mobile
+
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('container');
+    const linkIrparaCadastro = document.getElementById('mobileSignUp');
+    const linkIrparaLogin = document.getElementById('mobileSignIn');
+
+    if (linkIrparaCadastro) {
+        linkIrparaCadastro.addEventListener('click', (e) => {
+            e.preventDefault();
+            container.classList.add('right-panel-active');
+        })
+    }
+
+    if (linkIrparaLogin) {
+        linkIrparaLogin.addEventListener('click', (e) => {
+            e.preventDefault();
+            container.classList.remove('right-panel-active')
+        })
+    }
+});

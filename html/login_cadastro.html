@@ -24,11 +24,18 @@
                     <input type="email" id="cadEmail" name="cadEmail" placeholder="E-mail" required>
                 </div>
                 <div class="input-group">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="cadPhone" name="cadPhone" placeholder="Telefone" required>
+                </div>
+                <div class="input-group">
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" id="cadPassword" name="cadPassword" placeholder="Senha" required>
                     <i class="fa-solid fa-eye toggle-password" data-target="cadPassword" style="cursor: pointer;"></i>
                 </div>
                 <button type="submit" class="btn-main">Cadastrar</button>
+                <p class="link-mobile">
+                    Já tem conta? <a href="#" id="mobileSignIn">Entrar</a>
+                </p>
             </form>
         </div>
 
@@ -48,6 +55,10 @@
                 </div>
                 <a href="#" class="forgot-password">Esqueceu sua senha?</a>
                 <button type="submit" class="btn-main">Entrar</button>
+
+                <p class="link-mobile">
+                    Ainda não tem conta? <a href="#" id="mobileSignUp">Cadastre-se</a>
+                </p>
             </form>
         </div>
 

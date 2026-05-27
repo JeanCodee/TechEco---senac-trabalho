@@ -40,3 +40,27 @@ document.addEventListener('DOMContentLoaded', function() {
         chatMain.scrollTop = chatMain.scrollHeight;
     }  
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const contatos = document.querySelectorAll('.conversa-produto');
+    const chatPage = document.querySelector('.chat-page');
+    const botaoVoltar = document.querySelector('.voltar-pagina'); 
+    const botaoVoltarChat = document.querySelector('.voltar-chat');
+
+    contatos.forEach(contato => {
+        contato.addEventListener('click', (event) => {
+            event.preventDefault();
+            contatos.forEach(c => c.classList.remove('ativa'));
+            contato.classList.add('ativa');
+            chatPage.classList.add('exibir-conversa');
+        });
+    });
+
+    botaoVoltar.addEventListener('click', () => {
+        chatPage.classList.remove('exibir-conversa');
+    });
+    botaoVoltarChat.addEventListener('click', () => {
+        chatPage.classList.remove('exibir-conversa');
+    });
+});
