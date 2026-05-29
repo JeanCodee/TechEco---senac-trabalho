@@ -14,6 +14,12 @@ body {
     color: #333; /* Cinza escuro para o texto, evitando o preto puro */
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
 /* Pilares Laterais Verticais */
 .side-pilar {
     flex: 0 0 150px; /* Largura fixa para manter o formato de pilar */

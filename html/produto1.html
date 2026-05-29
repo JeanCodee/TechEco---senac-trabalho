@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/css/produto1.css">
+    <link rel="stylesheet" href="/TechEco---senac-trabalho/css/produto1.css">
+    <link rel="stylesheet" href="/TechEco---senac-trabalho/css/header_footer.css">
     <title>TechCiclo - Troca de Eletrônicos</title>
 </head>
 <body>
-    <header class="header-principal">
-        <div class="container-header">
-            <h1 class="logo">TechCiclo</h1>
-            <div class="usuario">
-                <span>Nome do usuário</span>
-                <a href="tela_perfil.html" title="Meu Perfil">
-                    <i class="fa-regular fa-circle-user"></i>
-                </a>
-            </div>
+    <header class="main-header">
+    <div class="header-top">
+        <div class="cep-container">
+            <span>Você mora em: <strong>CEP</strong></span>
         </div>
-    </header>
+        <div class="user-area">
+            <div class="user-info">
+                <span class="username">Nome do usuário</span>
+                <a href="#" class="login-link">login ou entrar</a>
+            </div>
+            <a href="tela_perfil.html" class="profile-icon">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <a href="#" class="logo-link">
+            <h1 class="logo-text">TechCiclo</h1>
+        </a>
+    </div>
+
+    
+</header>
 
     <main class="container-produto">
         <section class="produto-visual">
             <div class="card-img">
-                <img src="/img/baixados (1).jpg" alt="Mouse Gamer Hamster">
+                <img src="/TechEco---senac-trabalho/img/baixados (1).jpg" alt="Mouse Gamer Hamster">
             </div>
         </section>
 
@@ -53,7 +67,7 @@
             <div class="card-chat">
                 <h3>Chat com o proprietário</h3>
                 <p>Tire suas dúvidas antes de realizar a troca.</p>
-                <a href="inicio.html" class="btn-chat">
+                <a href="/TechEco---senac-trabalho/html/chat.html" class="btn-chat">
                     Iniciar Chat <i class="fa-solid fa-message"></i>
                 </a>
             </div>
@@ -61,18 +75,20 @@
     </main>
     <footer>
     <div class="footer-container">
+        <!-- Links rápidos (você pode adicionar mais depois) -->
         <div class="footer-col links">
             <h3>Navegação Rápida</h3>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Trocas</a></li>
-                <li><a href="#">Serviços de Manutenção</a></li>
+                <li><a href="/TechEco---senac-trabalho/html/inicio.html">Início</a></li>
+                <li><a href="/TechEco---senac-trabalho/html/trocas.html">Trocas</a></li>
+                <li><a href="/TechEco---senac-trabalho/html/servicos.html">Serviços de Manutenção</a></li>
                 <li><a href="#">Programa de Pontos</a></li>
                 <li><a href="#">Comunidade</a></li>
                 <li><a href="#">Para Empresas</a></li>
             </ul>
         </div>
 
+        <!-- Contato / Suporte -->
         <div class="footer-col suporte">
             <h3>Suporte</h3>
             <ul>
@@ -82,6 +98,8 @@
                 <li><a href="#">Política de Privacidade</a></li>
             </ul>
         </div>
+
+        <!-- Redes Sociais -->
         <div class="footer-col social">
             <h3>Siga-nos</h3>
             <div class="social-icons">
@@ -92,6 +110,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Barra inferior -->
     <div class="footer-bottom">
         <p>&copy; 2026 TechEco - Todos os direitos reservados.</p>
     </div>
