@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/TechEco---senac-trabalho/css/produtos.css">
+    <link rel="stylesheet" href="/TechEco---senac-trabalho/css/produtos2.css">
     <link rel="stylesheet" href="/TechEco---senac-trabalho/css/header_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>TechCiclo - Troca de Eletrônicos</title>
 </head>
 <body>
-    <header class="header-principal">
-        <div class="container-header">
-            <h1 class="logo">TechCiclo</h1>
-            <div class="usuario">
-                <span>Nome do usuário</span>
-                 <a href="/TechEco---senac-trabalho/html/tela_perfil.html" title="Meu Perfil">
-                    <i class="fa-regular fa-circle-user"></i>
-                </a>
+    <header class="main-header">
+    <div class="header-top">
+        <div class="cep-container">
+            <span>Você mora em: <strong>CEP</strong></span>
+        </div>
+        <div class="user-area">
+            <div class="user-info">
+                <span class="username">Nome do usuário</span>
+                <a href="login_cadastro.html" class="login-link">login ou entrar</a>
             </div>
-    </header>
+            <a href="tela_perfil.html" class="profile-icon">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <a href="inicio.html" class="logo-link">
+            <h1 class="logo-text">TechCiclo</h1>
+        </a>
+    </div>
+
+    
+</header>
 
     <main class="conteiner-produto">
         <section class="card-produto">
@@ -45,15 +59,15 @@
             </div>
             <div class="acoes-gupo">
                 <button class="btn btn-trocar">Solicitar troca</button>
-                <button class="btn btn-carrinho">
-                    Adicionar ao carrinnho <i class="fa-solid fa-cart-shopping"></i>
-                </button>
                 <button class="btn btn-info-extra">Adicionar informações</button>
             </div>
 
             <div class="card-chat">
-                <h3>Chat com o proprietário</h3>
-                <p>Tire suas dúvidas antes de realizar a troca.</p>
+                <h3>Chat com o proprietário:</h3>
+                <img src="/TechEco---senac-trabalho/img/foto_usuario.jpg" alt="Foto do usuário" class="foto-usuario">
+                <p class="nome-usuario">Maria Silva</p>
+                <span class="avaliacao">⭐ 4.8</span>
+                <span class="trocas-realizadas">🔁 12 trocas realizadas</span>
                 <a href="/TechEco---senac-trabalho/html/inicio.html" class="btn-chat">
                     Iniciar Chat <i class="fa-solid fa-menssage"></i>
                 </a>
