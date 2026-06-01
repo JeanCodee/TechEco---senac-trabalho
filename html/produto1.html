@@ -73,6 +73,38 @@
                 </a>
             </div>
         </section>
+    <div id="modal-troca" class="modal">
+        <div class="modal-content">
+            <button class="close-button" id="close-modal">&times;</button>
+
+            <h3>Escolha um dos seus produtos para solicitar a troca:</h3>
+            <p class="modal-subtitulo">Selecione um produto da sua lista:</p>
+            <form id="form-solicitar-troca">
+                <div class="lista-meus-produtos">
+                    <label>
+                        <input type="radio" name="produto-troca" value="teclado-rgb" required>
+                        <img src="/TechEco---senac-trabalho/img/teclado gamer logitech.jpg" alt="Teclado Gamer Logitech" class="produto-troca-imagem">
+                        <div class="produto-troca-info">
+                        <strong>Teclado Gamer Logitech</strong>
+                        <span>Estado: Usado (Excelente)</span>
+                        </div>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="produto-troca" value="headset-gamer" required>
+                        <img src="/TechEco---senac-trabalho/img/headset reddragon.jpg" alt="Headset Gamer Reddragon" class="produto-troca-imagem">
+                        <div class="produto-troca-info">
+                            <strong>Headset Gamer Reddragon</strong>
+                            <span>Estado: Usado (Boa)</span>
+                        </div>
+                    </label>
+
+                </div>
+
+                <button type="submit" class="btn btn-enviar-proposta">Enviar Proposta de Troca</button>
+            </form>
+        </div>
+    </div>
     </main>
     <footer>
     <div class="footer-container">
@@ -118,7 +150,7 @@
     </div>
 </footer>
 
-<script src="/js/trocas.js"></script>
+<script src="/TechEco---senac-trabalho/js/produto1.js"></script>
     
 
 </body>

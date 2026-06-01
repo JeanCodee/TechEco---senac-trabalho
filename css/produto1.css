@@ -149,6 +149,141 @@ body {
     font-weight: bold;
 }
 
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.mostrar {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    width: 500px;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    position: relative;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.mostrar .modal-content {
+    transform: translateY(0);
+}
+
+.modal-fechar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #888;
+}
+
+.modal-fechar:hover {
+    color: #333;
+}
+
+.modal-content h3 {
+    color: var(--text-titulo, #0011ff);
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.modal-subtitulo {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.lista-meus-produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.item-meu-produto {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.item-meu-produto:hover {
+    background-color: #f9f9f9;
+    border-color: var(--secondary-color, #203CC7);
+}
+
+.item-meu-produto input[type="radio"] {
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--secondary-color, #203CC7);
+}
+
+.item-meu-produto img {
+    width: 45px;
+    height: 45px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.item-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.item-detalhes strong {
+    font-size: 0.95rem;
+    color: #222;
+}
+
+.item-detalhes span {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.btn-enviar-proposta {
+    background-color: var(--secondary-color, #203CC7);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-enviar-proposta:hover {
+    background-color: #172aa3;
+}
+
 footer {
     background: linear-gradient(135deg, #082fe1 0%, #252ee6 100%);
     color: white;
