@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const btnSolicitarTroca = document.querySelector('.btn-trocar');
     const modalTroca = document.getElementById('modal-troca');
-    const btnFecharModal = document.getElementById('btn-fechar-modal');
+    const btnFecharModal = document.getElementById('close-modal');
     const formTroca = document.getElementById('form-solicitar-troca');
 
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     formTroca.addEventListener('submit', (event) => {
         event.preventDefault();
 
-        const itemSelecionado = document.querySelector('input[name="meu-item"]:checked').value;
+        const itemSelecionado = document.querySelector('input[name="produto-troca"]:checked').value;
         
         alert(`Proposta enviada com sucesso! Você ofereceu o item (${itemSelecionado}) para a troca.`);
         

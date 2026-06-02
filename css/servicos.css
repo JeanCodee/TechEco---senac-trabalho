@@ -321,68 +321,86 @@ input[type="text"] {
 }
 .card-servicos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    margin-bottom: 50px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 .servico {
-    background-color: var(--cor-card);
-    border-radius: 15px;
-    border: 1px solid #e5e5e5;
-    padding: 15px;
+    background-color: #ffffff; 
+    border-radius: 16px;
+    border: 1px solid #c8cdd3;
+    padding: 20px;
     text-align: center;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.servico:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    border-color: #007bff;
-}
-
-.servico img {
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-.butao{
-    background-color: #5d78d3;
-    border: 10%;
-    color: #e5e5e5;
-    
-}
-
-.servico p {
-    font-weight: bold;
-    color: #fbfcfc; 
-    font-size: 18px;
-    margin-top: 7px;
-}
-
-.informacional {
     display: flex;
-    justify-content: space-around;
-    gap: 20px; 
-    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: space-between; 
+    transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
-.butao {
-    padding: 12px 20px;
-    background-color: rgb(64, 101, 223);
-    color: white;
-    border: none;
+.servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #0329d5;
+}
+
+.servico-img-container {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #f8fafc;
+}
+
+.servico-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.servico-titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.servico-preco {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0329d5;
+    margin-bottom: 20px;
+}
+
+.btn-info {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #203CC7;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
     border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s, transform 0.1s;
 }
 
-.butao:hover {
-    background-color: rgb(40, 80, 200);
+.btn-info:hover {
+    background-color: #0329d5;
+}
+
+.btn-info:active {
+    transform: scale(0.98);
 }
 footer {
     background: linear-gradient(135deg, #082fe1 0%, #252ee6 100%);
