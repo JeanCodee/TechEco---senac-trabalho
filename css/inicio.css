@@ -241,6 +241,11 @@ a {
     background-color: #00d4ff;
 }
 
+.sobre-como-usar {
+    padding: 50px 5%;
+    background-color: #f5f5f5
+}
+
 /* Responsividade: vira uma coluna no celular */
 @media (max-width: 1024px) {
     .home-container { flex-direction: column; }
